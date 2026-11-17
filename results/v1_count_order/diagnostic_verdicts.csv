@@ -1,0 +1,5 @@
+scenario,clean,covariate,offtarget
+a,183,7,10
+b,0,17,183
+c,3,196,1
+d,0,192,8

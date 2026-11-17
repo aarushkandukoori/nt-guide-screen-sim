@@ -1,0 +1,76 @@
+800 replicates to run
+20/800 done, 22s
+40/800 done, 44s
+60/800 done, 65s
+80/800 done, 87s
+100/800 done, 109s
+120/800 done, 130s
+140/800 done, 150s
+160/800 done, 172s
+180/800 done, 193s
+200/800 done, 213s
+220/800 done, 235s
+240/800 done, 257s
+260/800 done, 279s
+280/800 done, 301s
+300/800 done, 324s
+320/800 done, 346s
+340/800 done, 369s
+360/800 done, 392s
+380/800 done, 416s
+400/800 done, 440s
+420/800 done, 461s
+440/800 done, 480s
+460/800 done, 499s
+480/800 done, 521s
+500/800 done, 541s
+520/800 done, 566s
+540/800 done, 588s
+560/800 done, 608s
+580/800 done, 630s
+600/800 done, 650s
+620/800 done, 673s
+640/800 done, 697s
+660/800 done, 720s
+680/800 done, 742s
+700/800 done, 765s
+720/800 done, 787s
+740/800 done, 811s
+760/800 done, 837s
+780/800 done, 863s
+800/800 done, 887s
+   scenario                           rule  reps  clean_drop_rate  any_clean_dropped  planted_catch_rate  calib_pass_rate  pass_when_truth_bad  mean_false_disc  mean_fdp  mean_power
+0         a  Oracle_batch_then_split_cells   200            0.014              0.125                 NaN            0.900                  NaN            1.855     0.103       0.999
+1         a             Oracle_model_batch   200            0.000              0.000                 NaN            0.885                  NaN            1.885     0.104       0.999
+2         a                    R0_keep_all   200            0.000              0.000                 NaN            0.900                  NaN            1.915     0.105       0.999
+3         a                    R1_circular   200            0.012              0.100                 NaN            1.000                  NaN            1.915     0.105       0.999
+4         a                 R2_split_genes   200            0.024              0.210                 NaN            0.790                  NaN            1.890     0.104       0.999
+5         a                R2b_split_cells   200            0.010              0.095                 NaN            0.855                  NaN            1.950     0.107       0.999
+6         a   R3_diagnose_then_split_cells   200            0.010              0.090                 NaN            0.830                  NaN            1.945     0.107       0.999
+7         b  Oracle_batch_then_split_cells   200            0.016              0.120               1.000            0.885                  NaN            1.750     0.097       0.999
+8         b             Oracle_model_batch   200            0.000              0.000               0.000            0.000                0.000            7.770     0.319       0.999
+9         b                    R0_keep_all   200            0.000              0.000               0.000            0.000                0.000            7.755     0.320       0.999
+10        b                    R1_circular   200            0.013              0.105               1.000            1.000                  NaN            1.820     0.101       0.999
+11        b                 R2_split_genes   200            0.030              0.220               1.000            0.585                  NaN            2.600     0.133       0.999
+12        b                R2b_split_cells   200            0.009              0.075               1.000            0.870                  NaN            1.845     0.102       0.999
+13        b   R3_diagnose_then_split_cells   200            0.009              0.070               0.925            0.810                0.000            2.280     0.119       0.999
+14        c  Oracle_batch_then_split_cells   200            0.013              0.115                 NaN            0.880                  NaN            2.150     0.118       0.999
+15        c             Oracle_model_batch   200            0.000              0.000                 NaN            0.870                  NaN            2.125     0.116       0.999
+16        c                    R0_keep_all   200            0.000              0.000                 NaN            0.270                0.270            8.320     0.307       0.999
+17        c                    R1_circular   200            0.178              0.730                 NaN            1.000                1.000           11.660     0.357       0.999
+18        c                 R2_split_genes   200            0.186              0.755                 NaN            0.325                0.325           10.305     0.342       0.999
+19        c                R2b_split_cells   200            0.051              0.335                 NaN            0.690                0.690            8.845     0.317       1.000
+20        c   R3_diagnose_then_split_cells   200            0.000              0.000                 NaN            0.020                0.020            8.320     0.307       0.999
+21        d  Oracle_batch_then_split_cells   200            0.014              0.115               1.000            0.915                  NaN            1.925     0.107       0.999
+22        d             Oracle_model_batch   200            0.000              0.000               0.000            0.000                0.000            8.340     0.331       0.999
+23        d                    R0_keep_all   200            0.000              0.000               0.000            0.000                0.000           18.080     0.511       1.000
+24        d                    R1_circular   200            0.134              0.590               1.000            1.000                1.000            9.795     0.337       0.999
+25        d                 R2_split_genes   200            0.138              0.595               1.000            0.350                0.350           10.195     0.352       0.999
+26        d                R2b_split_cells   200            0.048              0.295               1.000            0.710                0.710            8.835     0.320       0.999
+27        d   R3_diagnose_then_split_cells   200            0.001              0.010               0.040            0.035                0.035           17.520     0.503       1.000
+verdict   clean  covariate  offtarget
+scenario                             
+a           184          6         10
+b             0         15        185
+c             3        196          1
+d             0        192          8

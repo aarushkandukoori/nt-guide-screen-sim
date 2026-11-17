@@ -1,0 +1,72 @@
+800 replicates to run
+20/800 done, 17s
+40/800 done, 33s
+60/800 done, 50s
+80/800 done, 66s
+100/800 done, 82s
+120/800 done, 98s
+140/800 done, 114s
+160/800 done, 131s
+180/800 done, 148s
+200/800 done, 164s
+220/800 done, 182s
+240/800 done, 200s
+260/800 done, 217s
+280/800 done, 235s
+300/800 done, 252s
+320/800 done, 270s
+340/800 done, 288s
+360/800 done, 308s
+380/800 done, 334s
+400/800 done, 354s
+420/800 done, 374s
+440/800 done, 395s
+460/800 done, 415s
+480/800 done, 436s
+500/800 done, 455s
+520/800 done, 476s
+540/800 done, 499s
+560/800 done, 533s
+580/800 done, 562s
+600/800 done, 589s
+620/800 done, 620s
+640/800 done, 651s
+660/800 done, 679s
+680/800 done, 704s
+700/800 done, 730s
+720/800 done, 755s
+740/800 done, 779s
+760/800 done, 802s
+780/800 done, 828s
+800/800 done, 851s
+   scenario                     rule  reps  clean_drop_rate  any_clean_dropped  planted_catch_rate  calib_pass_rate  pass_when_truth_bad  mean_false_disc  mean_fdp  mean_power
+0         a  Oracle_batch_then_split   200            0.068              0.225                 NaN            0.780                  NaN            1.830     0.102       0.999
+1         a       Oracle_model_batch   200            0.000              0.000                 NaN            0.885                  NaN            1.885     0.104       0.999
+2         a              R0_keep_all   200            0.000              0.000                 NaN            0.900                  NaN            1.915     0.105       0.999
+3         a              R1_circular   200            0.028              0.100                 NaN            1.000                  NaN            1.960     0.108       0.999
+4         a                 R2_split   200            0.064              0.210                 NaN            0.795                  NaN            1.890     0.104       0.999
+5         a   R3_diagnose_then_split   200            0.060              0.200                 NaN            0.770                  NaN            1.895     0.104       0.999
+6         b  Oracle_batch_then_split   200            0.584              0.965               0.995            0.475                0.000           11.530     0.265       0.999
+7         b       Oracle_model_batch   200            0.000              0.000               0.000            0.000                0.000            7.770     0.319       0.999
+8         b              R0_keep_all   200            0.000              0.000               0.000            0.000                0.000            7.755     0.320       0.999
+9         b              R1_circular   200            0.361              0.730               0.918            0.830                0.000           11.940     0.219       0.999
+10        b                 R2_split   200            0.571              0.950               0.998            0.510                0.000           10.355     0.250       0.999
+11        b   R3_diagnose_then_split   200            0.524              0.875               0.912            0.485                0.000           10.000     0.252       0.999
+12        c  Oracle_batch_then_split   200            0.052              0.220                 NaN            0.780                  NaN            2.095     0.115       0.999
+13        c       Oracle_model_batch   200            0.000              0.000                 NaN            0.870                  NaN            2.125     0.116       0.999
+14        c              R0_keep_all   200            0.000              0.000                 NaN            0.270                0.270            8.320     0.307       0.999
+15        c              R1_circular   200            0.182              0.730                 NaN            0.995                0.995           11.885     0.351       1.000
+16        c                 R2_split   200            0.198              0.755                 NaN            0.370                0.370            9.925     0.334       0.999
+17        c   R3_diagnose_then_split   200            0.000              0.000                 NaN            0.020                0.020            8.320     0.307       0.999
+18        d  Oracle_batch_then_split   200            0.575              0.930               0.992            0.545                0.000           10.655     0.255       0.999
+19        d       Oracle_model_batch   200            0.000              0.000               0.000            0.000                0.000            8.340     0.331       0.999
+20        d              R0_keep_all   200            0.000              0.000               0.000            0.000                0.000           18.080     0.511       1.000
+21        d              R1_circular   200            0.491              0.920               0.868            0.750                0.750           32.915     0.500       0.999
+22        d                 R2_split   200            0.676              0.980               0.982            0.450                0.450           27.175     0.504       0.999
+23        d   R3_diagnose_then_split   200            0.022              0.035               0.035            0.025                0.025           18.615     0.509       1.000
+verdict   clean  covariate  offtarget
+scenario                             
+a           183          7         10
+b             0         17        183
+c             3        196          1
+d             0        192          8
